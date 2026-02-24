@@ -1,13 +1,13 @@
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-"""
+
 numero_1 = int(input("Digite um número inteiro:"))
 numero_2 = int(input("Digite outro número inteiro:"))
 soma = numero_1 + numero_2
 
 print(f"O resultado da soma foi: {soma}")
-"""
+
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
 numero_user = float(input("Digite um número: "))
@@ -48,10 +48,57 @@ print(f"O número {numero} ao quadrado fica {num_quad}")
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+
+num_1 = float(input("Digite um número: "))
+num_2 = float(input("Digite outro número: "))
+soma_float = num_1 + num_2
+
+print(f"O resultado da soma foi {soma_float}")
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+
+try:
+    num_1 = float(input("Digite um número: "))
+    num_2 = float(input("Digite outro número: "))
+    media_float = (num_1 + num_2)/2
+
+    print(f"O resultado da média foi {media_float}")
+except:
+    print("Algo deu errado, verifique se colocou números Reais corretamente")
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+
+try:
+    base = float(input("Digite um número para ser a base: "))
+    expo = float(input("Digite um número para ser o expoente: "))
+    calc_pot = base ** expo
+
+    print(f"O calculo de potência da base {base} com o expoente {expo} foi {calc_pot}")
+except:
+    print("Algo deu errado, verifique se digitou um número flutuante")
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+
+
+try:
+    cel = float(input("Digite um valor de uma temperatura em celsius para ser convertido em Fahrenheit: "))
+    fah = cel * 1.8 + 32
+
+    print(f"A temperatura {cel} Celsius é equivalente à {fah} Fahrenheit")
+except:
+    print("Algo deu errado, digite uma temperatura válida")
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+
+import math
+
+try:
+    raio = float(input("Digite o tamnho do raio: "))
+    area_circ = math.pi * raio ** 2
+    print (f"A área do cículo é {area_circ:.2f}")
+except:
+    print("Algo deu errado, digite um valor válido")
 
 # #### Strings (`str`)
 
