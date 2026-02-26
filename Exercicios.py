@@ -10,7 +10,7 @@ print(f"O resultado da soma foi: {soma}")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 
-numero_user = float(input("Digite um número: "))
+numero_user = int(input("Digite um número: "))
 resto_div = numero_user%5
 
 print(f"O resto da divisão foi: {resto_div:.2f}")
@@ -26,7 +26,7 @@ print(f"O resto da divisão foi: {resto_div:.2f}")
 
 num_1 = int(input("Digite um número: "))
 num_2 = int(input("Digite outro número: "))
-mult = num_1 * num_2
+mult = num_1 ** num_2
 
 print(f"O resultado da multiplicação do número {num_1} x {num_2} é igual a {mult:.2f}")
 
@@ -79,8 +79,6 @@ except:
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 
-
-
 try:
     cel = float(input("Digite um valor de uma temperatura em celsius para ser convertido em Fahrenheit: "))
     fah = cel * 1.8 + 32
@@ -103,10 +101,39 @@ except:
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+
+string_upper = input("Digite uma frase para deixá-la em CAIXA ALTA: ").upper()
+
+print(f"A frase em caixa alta ficou assim: \n{string_upper}")
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+
+nome_lower = input("Digite seu nome completo: ").lower()
+
+print(f"Seu nome é: {nome_lower}")
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+
+frase_strip = input("Digite uma frase: ").strip()
+
+print(f"A frase foi a seguinte: \n{frase_strip}")
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+
+try:
+    lista = input("Digite uma data no seguinte formato 'dd/mm/aaaa':\n").split("/")
+
+    print(f"A data é composta pelo dia {lista[0]}, o mês {lista[1]} e o ano {lista[2]}")
+except:
+    print("Coloque a data no formato indicado")
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+
+s1 = input("Digite o nome de um carro: ")
+s2 = input("Digite o nome de uma fruta: ")
+s_concat = s1 + " " + s2
+
+print(f"O nome do seu carro fruta é: {s_concat}")
 
 # #### Booleanos (`bool`)
 
