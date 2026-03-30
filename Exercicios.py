@@ -138,10 +138,58 @@ print(f"O nome do seu carro fruta é: {s_concat}")
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
+bool_1 = input("Digite um valor booleano (True ou False): ")
+bool_2 = input("Digite outro valor booleano (True ou False): ") 
+if bool_1 == "True" and bool_2 == "True":
+    print("O resultado da operação AND entre os dois valores booleanos é: True")
+else:
+    print("O resultado da operação AND entre os dois valores booleanos é: False")
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
+bool_1 = input("Digite um valor booleano (True ou False): ")
+bool_2 = input("Digite outro valor booleano (True ou False): ")
+if bool_1 == "True" or bool_2 == "True":
+    print("O resultado da operação OR entre os dois valores booleanos é: True")
+else:
+    print("O resultado da operação OR entre os dois valores booleanos é: False")
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+try:
+    bool_user = input("Digite um valor booleano (True ou False): ")
+    if bool_user == "True".lower():
+        print("O valor booleano invertido é: False")
+    elif bool_user == "False".lower():
+        print("O valor booleano invertido é: True")
+except:
+    print("Valor booleano inválido, digite True ou False")
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+try:
+    num_1 = int(input("Digite um número: "))
+    num_2 = int(input("Digite outro número: "))
+    if num_1 == num_2:
+        print("Os números são iguais")
+    else:    
+        print("Os números são diferentes")
+except:
+    print("Algo deu errado, verifique se digitou um número inteiro")
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+try:
+    num_1 = int(input("Digite um número: "))
+    num_2 = int(input("Digite outro número: "))
+    if num_1 != num_2:
+        print("Os números são diferentes")
+    else:    
+        print("Os números são iguais")
+except:
+    print("Algo deu errado, verifique se digitou um número inteiro")
+
 
 # #### try-except e if
 
